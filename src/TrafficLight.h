@@ -69,9 +69,6 @@ private:
     std::condition_variable _condition;
     std::mutex _mutex;
     TrafficLightPhase _currentPhase;
-
-    static std::random_device _rd;
-    static std::mt19937 eng(_rd);
 };
 
 #endif
